@@ -8,7 +8,7 @@ import SearchComponent from './component/SearchComponent';
 // import DashboardComponent from './component/DashboardComponent';
 import AdminPanelComponent from './component/AdminPanelComponent';
 import Order from './component/Order';
-import Settings from './component/Settings';
+// import Settings from './component/Settings';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         {/* <Route path="/dashboard" element={<DashboardComponent />} /> */}
         <Route path="/admin-panel" element={<AdminPanelComponent />} />
         <Route path="/order" element={<Order />} />
-        <Route path="/settings" element={<Settings />} />
+        {/* <Route path="/settings" element={<Settings />} /> */}
       </Routes>
     </Router>
   );
