@@ -64,15 +64,6 @@ const Home = () => {
           <Link to="/authentication" style={linkStyle} activeStyle={linkHoverStyle}>Authentication</Link>
         </li>
         <li>
-          {/* <Link to="/search" style={linkStyle} activeStyle={linkHoverStyle}>Search</Link> */}
-        </li>
-        {/* <li>
-          <Link to="/dashboard" style={linkStyle} activeStyle={linkHoverStyle}>Dashboard</Link>
-        </li> */}
-        <li>
-          {/* <Link to="/admin-panel" style={linkStyle} activeStyle={linkHoverStyle}>Admin Panel</Link> */}
-        </li>
-        <li>
           <Link to="/order" style={linkStyle} activeStyle={linkHoverStyle}>Order</Link>
         </li>
         <li>

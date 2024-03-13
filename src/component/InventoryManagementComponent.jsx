@@ -26,6 +26,7 @@ const InventoryManagement = () => {
       if (!response.ok) {
         throw new Error('Failed to add inventory item');
       }
+      console.log(response);
       console.log('Inventory item added successfully');
     } catch (error) {
       console.error('Error adding inventory item:', error.message);

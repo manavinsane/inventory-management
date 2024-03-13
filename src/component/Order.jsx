@@ -1,27 +1,39 @@
-// OrderForm.js
+// Order.jsx
 
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const OrderForm = () => {
+const Order = () => {
   const [order, setOrder] = useState({
-    productId: '',
+    id: 0,
     quantity: 0
   });
 
   const handleChange = event => {
+    event.preventDefault();
     const { name, value } = event.target;
+    console.log(name, value)
     setOrder(prevState => ({
       ...prevState,
-      [name]: value
+      [name]: parseInt(value,10) || 0
     }));
   };
 
   const handleSubmit = async event => {
     event.preventDefault();
+    console.log("React: ", order);
     try {
-      await axios.post('/api/orders', order);
-      alert('Order placed successfully!');
+      const response = await axios.post('http://localhost:8080/api/order/place', order); // Adjust URL according to your backend server
+      if(response.status == 200){
+        console.log(response.data)
+        if(response.data == "Insuffient stock"){
+          alert(response.data)
+        } else if(response.data == "not found"){
+          alert("product not found");
+        }else{
+          alert("order placed successfully");
+        }
+      }
     } catch (error) {
       console.error('Error placing order:', error);
       alert('Error placing order. Please try again.');
@@ -35,8 +47,8 @@ const OrderForm = () => {
         <label>
           Product ID:
           <input
-            type="text"
-            name="productId"
+            type="number"
+            name="id"
             value={order.productId}
             onChange={handleChange}
           />
@@ -56,4 +68,4 @@ const OrderForm = () => {
   );
 };
 
-export default OrderForm;
+export default Order;
