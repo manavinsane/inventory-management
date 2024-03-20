@@ -7,7 +7,7 @@ const SearchComponent = () => {
     const [searchResults, setSearchResults] = useState([]);
 
     // Function to handle search
-    const handleSearch = async (event) => {
+    const handleSearch = async (event) => { 
         event.preventDefault();
         try {
             const response = await axios.get(`http://localhost:8080/api/products/search?q=${searchQuery}`);
