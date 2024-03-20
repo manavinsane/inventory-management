@@ -5,7 +5,7 @@ import ProductList from './component/ProductList';
 import InventoryManagementComponent from './component/InventoryManagementComponent';
 //import AuthenticationComponent from './component/AuthenticationComponent';
 import SearchComponent from './component/SearchComponent';
-// import DashboardComponent from './component/DashboardComponent';
+
 // import AdminPanelComponent from './component/AdminPanelComponent';
 import Order from './component/Order';
 // import Settings from './component/Settings';
