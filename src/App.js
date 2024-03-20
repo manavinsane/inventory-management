@@ -20,7 +20,7 @@ function App() {
         {/* <Route path="/authentication" element={<AuthenticationComponent />} /> */}
         <Route path="/search" element={<SearchComponent />} />
         {/* <Route path="/dashboard" element={<DashboardComponent />} /> */}
-        <Route path="/admin-panel" element={<AdminPanelComponent />} />
+        {/* <Route path="/admin-panel" element={<AdminPanelComponent />} /> */}
         <Route path="/order" element={<Order />} />
         {/* <Route path="/settings" element={<Settings />} /> */}
       </Routes>
