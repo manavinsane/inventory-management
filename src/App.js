@@ -6,7 +6,7 @@ import InventoryManagementComponent from './component/InventoryManagementCompone
 //import AuthenticationComponent from './component/AuthenticationComponent';
 import SearchComponent from './component/SearchComponent';
 // import DashboardComponent from './component/DashboardComponent';
-import AdminPanelComponent from './component/AdminPanelComponent';
+// import AdminPanelComponent from './component/AdminPanelComponent';
 import Order from './component/Order';
 // import Settings from './component/Settings';
 
