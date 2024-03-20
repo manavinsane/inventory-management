@@ -61,7 +61,7 @@ const Home = () => {
           <Link to="/inventory-management" style={linkStyle} activeStyle={linkHoverStyle}>Inventory Management</Link>
         </li>
         <li>
-          <Link to="/authentication" style={linkStyle} activeStyle={linkHoverStyle}>Authentication</Link>
+          {/* <Link to="/authentication" style={linkStyle} activeStyle={linkHoverStyle}>Authentication</Link> */}
         </li>
         <li>
           <Link to="/order" style={linkStyle} activeStyle={linkHoverStyle}>Order</Link>
